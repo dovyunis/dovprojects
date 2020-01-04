@@ -3,8 +3,15 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                echo "Hello World!"
+                //echo "Hello World!"
+                myhello()
             }
         }
     }
+}
+
+
+
+def myhello() {
+    echo "hi, this is my first function"
 }
